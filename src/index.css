@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-5xl
+    }
+    h2 {
+        @apply text-2xl
+    }
+    h3 {
+        @apply text-xl
+    }
+    @font-face {
+        font-family: 'Dessau Medium';
+        src: url('../public/fonts/Dessau-Medium.ttf');
+    }
+    @font-face {
+        font-family: 'Solway Bold';
+        src: url('../public/fonts/Solway-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Solway Medium';
+        src: url('../public/fonts/Solway-Medium.ttf');
+    }
+    @font-face {
+        font-family: 'Inter Regular';
+        src: url('../public/fonts/Inter-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'Inter Bold';
+        src: url('../public/fonts/Inter-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Inter Italic';
+        src: url('../public/fonts/InterTight-Italic.ttf');
+    }
+}

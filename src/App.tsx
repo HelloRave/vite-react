@@ -1,3 +1,10 @@
+import Logo from 'public/images/svg/logo.svg?react';
+
 export default function App() {
-  return <h1 className="text-red-300">Hello world</h1>;
+  return (
+    <>
+      <Logo />
+      <h1 className="text-blue font-dessau-medium">Hello world</h1>
+    </>
+  );
 }
