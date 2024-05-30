@@ -2,12 +2,39 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Root from '@/Root';
 import './index.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+  redirect,
+} from 'react-router-dom';
+import Dashboard from 'routes/Dashboard';
+import Login from 'routes/Login';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: 'auth',
+        element: <Outlet />,
+        children: [
+          {
+            index: true,
+            loader: () => redirect('/auth/login'),
+          },
+          {
+            path: 'login',
+            element: <Login />,
+          },
+        ],
+      },
+    ],
   },
 ]);
 

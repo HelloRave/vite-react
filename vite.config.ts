@@ -12,7 +12,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
       components: `${path.resolve(__dirname, "./src/components/")}`,
       public: `${path.resolve(__dirname, "./public/")}`,
-      pages: path.resolve(__dirname, "./src/pages"),
+      routes: path.resolve(__dirname, "./src/routes"),
       types: `${path.resolve(__dirname, "./src/@types")}`,
     }
   },
