@@ -14,26 +14,26 @@
     }
     @font-face {
         font-family: 'Dessau Medium';
-        src: url('../public/fonts/Dessau-Medium.ttf');
+        src: url('/fonts/Dessau-Medium.ttf');
     }
     @font-face {
         font-family: 'Solway Bold';
-        src: url('../public/fonts/Solway-Bold.ttf');
+        src: url('/fonts/Solway-Bold.ttf');
     }
     @font-face {
         font-family: 'Solway Medium';
-        src: url('../public/fonts/Solway-Medium.ttf');
+        src: url('/fonts/Solway-Medium.ttf');
     }
     @font-face {
         font-family: 'Inter Regular';
-        src: url('../public/fonts/Inter-Regular.ttf');
+        src: url('/fonts/Inter-Regular.ttf');
     }
     @font-face {
         font-family: 'Inter Bold';
-        src: url('../public/fonts/Inter-Bold.ttf');
+        src: url('/fonts/Inter-Bold.ttf');
     }
     @font-face {
         font-family: 'Inter Italic';
-        src: url('../public/fonts/InterTight-Italic.ttf');
+        src: url('/fonts/InterTight-Italic.ttf');
     }
 }
