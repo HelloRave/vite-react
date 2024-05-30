@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 describe('App', () => {
   it('renders the App component', () => {
-    render(<App />, {wrapper: BrowserRouter});
+    render(<App />, { wrapper: BrowserRouter });
 
     screen.debug();
   });

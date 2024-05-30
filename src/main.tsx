@@ -7,9 +7,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />
-  }
-])
+    element: <Root />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
