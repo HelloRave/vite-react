@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className="flex gap-6">
           <h3 className="font-solway-medium">Community list</h3>
           <Link
-            to={'/login'}
+            to={'/auth/login'}
             className="cursor-pointer font-solway-medium text-xl"
           >
             Sign in

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import Root from '@/Root';
 import './index.css';
 import {
-  Outlet,
   RouterProvider,
   createBrowserRouter,
   redirect,
 } from 'react-router-dom';
 import Dashboard from 'routes/Dashboard';
 import Login from 'routes/Login';
+import AuthLayout from './layouts/AuthLayout';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'auth',
-        element: <Outlet />,
+        element: <AuthLayout />,
         children: [
           {
             index: true,

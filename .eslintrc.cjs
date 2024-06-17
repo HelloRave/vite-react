@@ -26,6 +26,14 @@ module.exports = {
     'comma-style': ['error', 'last'],
     'no-console': 0,
     'func-call-spacing': ['error', 'never'],
+    '@typescript-eslint/no-misused-promises': [
+      2,
+      {
+        checksVoidReturn: {
+          attributes: false,
+        },
+      },
+    ],
   },
   parserOptions: {
     ecmaVersion: 'latest',
